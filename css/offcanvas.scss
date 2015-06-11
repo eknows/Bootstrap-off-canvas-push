@@ -109,6 +109,30 @@ body{
             z-index: 100;
             background-color: $black;
         }
+        &>.navbar-collapse{
+            position: fixed;
+            z-index: 50;
+            bottom: 0px;
+            top: 0px;
+            left: -50%;
+            margin: 0;
+            padding: 0px;
+            width: 48%;
+            white-space: nowrap;
+            box-shadow: none;
+            border-top: 0px solid white;
+            display: block;
+            overflow-y: auto;   
+            background-color: $black;
+            overflow-x: hidden;
+            &.active{
+                left:0px;
+            }
+        }
+        ul{
+            margin: 50px 0 0 0;
+            padding: 0px;
+        }    
     }
 }
 
@@ -116,32 +140,6 @@ body{
         transition: all 0.25s ease-out;
 }
 
-.container{
-    &>.navbar-collapse{
-        position: fixed;
-        z-index: 50;
-        bottom: 0px;
-        top: 0px;
-        left: -50%;
-        margin: 0;
-        padding: 0px;
-        width: 48%;
-        white-space: nowrap;
-        box-shadow: none;
-        border-top: 0px solid white;
-        display: block;
-        overflow-y: auto;   
-        background-color: $black;
-        overflow-x: hidden;
-        &.active{
-            left:0px;
-        }
-    }
-    ul{
-        margin: 50px 0 0 0;
-        padding: 0px;
-    }
-}
 
 //Animation Navbar Button
 .navbar-toggle{
