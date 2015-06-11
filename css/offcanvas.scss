@@ -183,17 +183,18 @@ body{
                 padding-left: none;
                 margin: initial;
             }
+            &>.navbar-collapse{
+                position: initial;
+                z-index: initial;
+                bottom: initial;
+                top: initial;;
+                background-color: initial;
+                margin: initial;
+                width: initial;
+            }   
         }
     }    
-    .container>.navbar-collapse{
-        position: initial;
-        z-index: initial;
-        bottom: initial;
-        top: initial;;
-        background-color: initial;
-        margin: initial;
-        width: initial;
-    }   
+
     
     .navbar-nav {
       margin: initial;
