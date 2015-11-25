@@ -1,4 +1,7 @@
-jQuery(document).ready(function($) {  
+/*! Bootstrap-off-canvas-push - v1.0.1
+* Copyright (c) 2015 Steffen Ermel; Licensed MIT *
+*/
+jQuery(document).ready(function($) {
 
     function whichTransitionEvent() {
         var el = document.createElement('event'),
@@ -14,7 +17,7 @@ jQuery(document).ready(function($) {
         }
     }
     var transitionEvent = whichTransitionEvent();
-    
+
     $('[data-toggle="offcanvas"], .overlay').click(function () {
         $('.overlay').toggleClass('active');
         $('body').toggleClass('active');
@@ -27,7 +30,20 @@ jQuery(document).ready(function($) {
                $('.navbar-collapse').removeClass('transition');
         });
     });
-    
+
+    $('.navbar .nav a').click(function () {
+        $('.overlay').removeClass('active');
+        $('body').removeClass('active');
+        $('#navbar').removeClass('in');
+        $('.row-offcanvas').removeClass('active');
+        $('.sidebar-offcanvas').removeClass('active');
+        $('.navbar-toggle').addClass('collapsed');
+        $('.transition').one(transitionEvent,
+             function(e) {
+               $('.navbar-collapse').removeClass('transition');
+        });
+    });
+
     $('.overlay').swiperight(function () {
         $('.overlay').addClass('active');
         $('body').addClass('active');
@@ -37,7 +53,7 @@ jQuery(document).ready(function($) {
         $('.navbar-toggle').removeClass('collapsed');
         $('.navbar-collapse').addClass('transition');
     });
-    
+
     $('.overlay').swipeleft(function () {
         $('.overlay').removeClass('active');
         $('body').removeClass('active');
@@ -50,5 +66,5 @@ jQuery(document).ready(function($) {
                $('.navbar-collapse').removeClass('transition');
         });
     });
-    
+
 });

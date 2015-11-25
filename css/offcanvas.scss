@@ -1,3 +1,7 @@
+/*! Bootstrap-off-canvas-push - v1.0.1
+ * Copyright (c) 2015 Steffen Ermel; Licensed MIT *
+ */
+
 $black: #222;
 $white: #fff;
 $lightblack: #080808;
@@ -122,7 +126,7 @@ body{
             box-shadow: none;
             border-top: 0px solid white;
             display: block;
-            overflow-y: auto;   
+            overflow-y: auto;
             background-color: $black;
             overflow-x: hidden;
             &.active{
@@ -132,7 +136,7 @@ body{
         ul{
             margin: 50px 0 0 0;
             padding: 0px;
-        }    
+        }
     }
 }
 
@@ -156,7 +160,7 @@ body{
 .navbar-toggle:not(.collapsed){
      .icon-bar:nth-child(2) {
         transform: rotate(-45deg);
-    }   
+    }
     .icon-bar:nth-child(4) {
         transform: rotate(45deg);
     }
@@ -191,17 +195,17 @@ body{
                 background-color: initial;
                 margin: initial;
                 width: initial;
-            }   
+            }
         }
-    }    
+    }
 
-    
+
     .navbar-nav {
       margin: initial;
     }
-    
+
     .overlay{
         display: none;
     }
-    
+
 }

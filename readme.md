@@ -1,16 +1,16 @@
-#Bootstrap push sytle off canvas menu
+#Bootstrap push style off canvas menu
 
 ## Description
 Bootstrap navigation hack for push style off canvas menu.
 
 1. Only works with navbar-static-top
-2. jquery is required
-3. jquery mobile is required for touch events, build it here: http://jquerymobile.com/download-builder/
-4. bootstrap ist required
+2. jQuery is required
+3. jQuery mobile is required for touch events, build it here: http://jquerymobile.com/download-builder/
+4. Bootstrap ist required
 5. Hack your Bootstrap navigation:
 
 Add directly after the body tag
-```<div class="overlay"></div>``` 
+```<div class="overlay"></div>```
 
 Change data-toggle to offcanvas
 ```<button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" aria-controls="navbar">```
@@ -28,4 +28,4 @@ Add class row-offcanvas and row-offcanvas-left inside the container
 ```<div class="row-offcanvas row-offcanvas-left">```
 
 ## Demo Time
-http://jsfiddle.net/0Lw4mbzg/
+http://jsfiddle.net/0Lw4mbzg/1/
