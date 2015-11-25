@@ -28,4 +28,4 @@ Add class row-offcanvas and row-offcanvas-left inside the container
 ```<div class="row-offcanvas row-offcanvas-left">```
 
 ## Demo Time
-http://jsfiddle.net/0Lw4mbzg/1/
+http://jsfiddle.net/0Lw4mbzg/2/

@@ -1,4 +1,4 @@
-/*! Bootstrap-off-canvas-push - v1.0.1
+/*! Bootstrap-off-canvas-push - v1.0.2
  * Copyright (c) 2015 Steffen Ermel; Licensed MIT *
  */
 
@@ -20,7 +20,7 @@ body{
 
 .overlay{
     background-color: rgba(0, 0, 0, 0);
-    position: absolute;
+    position: fixed;
     top: 0px;
     bottom: 0px;
     left: 0px;
