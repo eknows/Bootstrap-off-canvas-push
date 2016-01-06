@@ -1,4 +1,4 @@
-/*! Bootstrap-off-canvas-push - v1.0.2
+/*! Bootstrap-off-canvas-push - v1.0.3
  * Copyright (c) 2015 Steffen Ermel; Licensed MIT *
  */
 
@@ -188,6 +188,13 @@ body{
                 margin: initial;
             }
             &>.navbar-collapse{
+                position: relative;
+                z-index: auto;
+                bottom: auto;
+                top: auto;
+                background-color: transparent;
+                margin: auto;
+                width: auto;
                 position: initial;
                 z-index: initial;
                 bottom: initial;
